@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>お問い合わせテストフォーム</h1>
-    <form name="inquiry" class="form" action="https://otoiawase-staging.herokuapp.com/info@fjord.jp" method="post">
+    <form name="inquiry" class="form" action="http://localhost:3000/info@fjord.jp" method="post">
       <label>メールアドレス</label>
       <br>
       <input name="email" type="text">
@@ -17,6 +17,8 @@
       <br>
       <textarea name="body"></textarea>
       <br>
+      <input type="hidden" name="_cc" value="komagata@gmail.com">
+      <input type="hidden" name="_thanks" value="/thanks.html">
       <input type="submit" value="送信">
     </form>
   </body>
